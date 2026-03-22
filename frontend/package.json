@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://CineseCinese.github.io/radioamica",
+  "homepage": "https://masterradioamica.github.io/",
 
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
