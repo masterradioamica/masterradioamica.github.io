@@ -1,0 +1,123 @@
+{
+  "brand_identity": {
+    "name": "RADIOAMICA",
+    "full_name": "Master in RADIOmica/rAdiogenoMIca Cooperativa basata su intelligenza Artificiale",
+    "tone": "Academic, Innovative, Medical, Professional, High-Tech",
+    "theme": "light",
+    "primary_color": "#0f172a",
+    "accent_color": "#0ea5e9",
+    "secondary_accent": "#6366f1",
+    "background_color": "#f8fafc",
+    "surface_color": "#ffffff"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["600", "700", "800"],
+      "tracking": "tight"
+    },
+    "body": {
+      "font_family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "leading": "relaxed"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#0f172a",
+      "secondary": "#64748b",
+      "accent": "#0ea5e9",
+      "accent_hover": "#0284c7",
+      "background": "#f8fafc",
+      "card_bg": "#ffffff",
+      "border": "#e2e8f0",
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444"
+    },
+    "gradients": {
+      "hero": "linear-gradient(to right bottom, #0f172a, #1e293b, #0f172a)",
+      "accent": "linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%)",
+      "subtle": "linear-gradient(to top, #f8fafc, #ffffff)"
+    }
+  },
+  "layout": {
+    "grid_system": "Use a 12-column grid. Max-width container: max-w-7xl. Padding: px-4 sm:px-6 lg:px-8.",
+    "spacing": {
+      "section_padding": "py-16 lg:py-24",
+      "element_gap": "gap-8"
+    },
+    "radius": "rounded-xl"
+  },
+  "components": {
+    "navbar": {
+      "style": "glassmorphism",
+      "classes": "sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60",
+      "logo_height": "h-10"
+    },
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-8 py-3 font-semibold",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-sm rounded-full px-6 py-2",
+      "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-full px-6 py-2"
+    },
+    "cards": {
+      "style": "bg-card text-card-foreground shadow-md hover:shadow-lg transition-all duration-300 border border-border/50 hover:border-accent/50 rounded-xl overflow-hidden",
+      "hover_effect": "transform hover:-translate-y-1"
+    },
+    "hero": {
+      "style": "dark_mode",
+      "elements": "Particles/Network background, Large typography, CTA buttons",
+      "min_height": "min-h-[80vh] flex items-center"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "card": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "glow": "0 0 20px -5px rgba(14, 165, 233, 0.5)"
+    },
+    "animations": {
+      "fade_in_up": "initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}",
+      "stagger_children": "variants={{ hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } } }}"
+    },
+    "icons": "Use Lucide React icons. Stroke width: 1.5 or 2. Size: w-5 h-5 or w-6 h-6."
+  },
+  "images": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_3562437c-6e92-4176-9322-4b8de0ccb935/artifacts/kdmx089f_IMG_6048.png",
+    "brochure_url": "https://customer-assets.emergentagent.com/job_3562437c-6e92-4176-9322-4b8de0ccb935/artifacts/d7r9s7tl_IMG_6049.jpeg",
+    "placeholders": {
+      "hero_bg": "https://images.unsplash.com/photo-1643216503879-b2c604ce6cf2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwYWklMjB0ZWNobm9sb2d5JTIwcmFkaW9taWNzfGVufDB8fHx8MTc3NDE5MjQ4OHww&ixlib=rb-4.1.0&q=85",
+      "student_learning": "https://images.unsplash.com/photo-1631563020941-c0c6bc534b8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxtZWRpY2FsJTIwYWklMjB0ZWNobm9sb2d5JTIwcmFkaW9taWNzfGVufDB8fHx8MTc3NDE5MjQ4OHww&ixlib=rb-4.1.0&q=85",
+      "science_building": "https://images.pexels.com/photos/36372978/pexels-photo-36372978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "abstract_dna": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    }
+  },
+  "content_structure": {
+    "nav_items": [
+      { "label": "Introduzione", "href": "#intro" },
+      { "label": "Comitato Scientifico", "href": "#committee" },
+      { "label": "Organizzazione Corsi", "href": "#courses" },
+      { "label": "Studenti", "href": "#students" },
+      { "label": "News", "href": "#news" },
+      { "label": "Progetto RADIOAMICA", "href": "#project", "is_external": true }
+    ],
+    "sections": {
+      "intro": "Brief overview of Radiomics/Radiogenomics and AI. 2-column layout (Text + Image).",
+      "committee": "Grid of cards. Each card: Placeholder Avatar, Name, Title. Use a clean, professional grid.",
+      "courses": "Detailed breakdown of modules. Use Accordion or Timeline component for readability.",
+      "students": "Testimonials or student profiles. Use a carousel or grid.",
+      "news": "Highlight the Workshop brochure. Use a featured card layout.",
+      "project": "Dedicated section for the external project link. Use a contrasting background (e.g., dark blue)."
+    }
+  },
+  "universal_guidelines": [
+    "Use 'Manrope' for all Headings (font-weight: 700/800).",
+    "Use 'Inter' for Body text (font-weight: 400/500).",
+    "Ensure high contrast for accessibility (APCA/WCAG).",
+    "Interactive elements must have hover states.",
+    "Use data-testid attributes for all interactive elements.",
+    "Responsive design: Mobile-first. Stack columns on mobile, 2-3 columns on tablet/desktop.",
+    "Do NOT use pure black (#000000). Use Slate 900 (#0f172a).",
+    "Glassmorphism effects should be subtle, not muddy. Use backdrop-blur-md."
+  ],
+  "instructions_to_main_agent": "1. Set up the font in index.css (import from Google Fonts: Manrope & Inter). 2. Update tailwind.config.js with brand colors and fonts. 3. Build the Landing Page component following the section structure. 4. Use Lucide React for icons. 5. Ensure the Logo and Brochure images are correctly displayed. 6. Implement smooth scrolling for anchor links."
+}
