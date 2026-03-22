@@ -276,32 +276,35 @@ const Navbar = () => {
 
 // Hero Section
 const HeroSection = () => (
-  <section className="hero-gradient network-pattern min-h-[80vh] flex items-center relative overflow-hidden" data-testid="hero-section">
-    {/* Decorative elements */}
-    <div className="absolute inset-0 opacity-20">
-      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-cyan-500/30 blur-3xl floating" />
-      <div className="absolute bottom-20 right-10 w-48 h-48 rounded-full bg-indigo-500/20 blur-3xl floating-delayed" />
+  <section className="bg-black min-h-[90vh] sm:min-h-[80vh] flex items-center relative overflow-hidden" data-testid="hero-section">
+    {/* Dark overlay for better contrast */}
+    <div className="absolute inset-0 bg-gradient-to-br from-black via-slate-900 to-black"></div>
+    
+    {/* Decorative elements - more subtle */}
+    <div className="absolute inset-0 opacity-30">
+      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-cyan-600/20 blur-3xl floating" />
+      <div className="absolute bottom-20 right-10 w-48 h-48 rounded-full bg-indigo-600/15 blur-3xl floating-delayed" />
     </div>
 
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <div className="text-center lg:text-left animate-fade-in-up">
-          <Badge className="bg-cyan-500/20 text-cyan-300 border-cyan-500/30 mb-6" data-testid="hero-badge">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 relative z-10">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="text-center lg:text-left animate-fade-in-up order-2 lg:order-1">
+          <Badge className="bg-cyan-500/30 text-cyan-300 border-cyan-400/40 mb-4 sm:mb-6 text-xs sm:text-sm" data-testid="hero-badge">
             Master di II Livello
           </Badge>
-          <h1 className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white mb-6 leading-tight">
+          <h1 className="font-heading font-extrabold text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 leading-tight">
             <span className="text-cyan-400">RADIO</span>mica/r<span className="text-cyan-400">A</span>diogeno<span className="text-cyan-400">MI</span>ca
-            <span className="block text-2xl sm:text-3xl lg:text-4xl mt-4 font-semibold text-slate-300">
+            <span className="block text-base sm:text-2xl md:text-3xl lg:text-4xl mt-2 sm:mt-4 font-semibold text-slate-200">
               Cooperativa basata su intelligenza Artificiale
             </span>
           </h1>
-          <p className="text-slate-300 text-lg mb-8 max-w-xl mx-auto lg:mx-0">
+          <p className="text-slate-300 text-base sm:text-lg mb-6 sm:mb-8 max-w-xl mx-auto lg:mx-0">
             Formazione avanzata in Intelligenza Artificiale applicata all'imaging medico per medici, ricercatori e professionisti sanitari.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
             <Button 
               size="lg" 
-              className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-8 shadow-lg shadow-cyan-500/25"
+              className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full px-6 sm:px-8 py-3 shadow-lg shadow-cyan-500/25 text-sm sm:text-base"
               onClick={() => document.querySelector('#intro').scrollIntoView({ behavior: 'smooth' })}
               data-testid="hero-cta-scopri"
             >
@@ -310,14 +313,14 @@ const HeroSection = () => (
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white/50 text-white hover:bg-white/10 rounded-full px-8"
+              className="border-white/60 text-white hover:bg-white/10 rounded-full px-6 sm:px-8 py-3 text-sm sm:text-base"
               onClick={() => document.querySelector('#courses').scrollIntoView({ behavior: 'smooth' })}
               data-testid="hero-cta-programma"
             >
               Programma Didattico
             </Button>
           </div>
-          <div className="flex items-center gap-6 mt-8 justify-center lg:justify-start text-slate-400 text-sm">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 sm:mt-8 justify-center lg:justify-start text-slate-300 text-xs sm:text-sm">
             <span className="flex items-center gap-2">
               <Clock className="w-4 h-4" /> Didattica Online
             </span>
@@ -326,11 +329,11 @@ const HeroSection = () => (
             </span>
           </div>
         </div>
-        <div className="flex justify-center lg:justify-end animate-fade-in-up animate-delay-200">
+        <div className="flex justify-center lg:justify-end animate-fade-in-up animate-delay-200 order-1 lg:order-2">
           <img 
             src={LOGO_URL} 
             alt="RADIOAMICA Logo" 
-            className="w-64 sm:w-80 lg:w-96 drop-shadow-2xl"
+            className="w-48 sm:w-64 md:w-72 lg:w-80 xl:w-96 drop-shadow-2xl"
             data-testid="hero-logo"
           />
         </div>
