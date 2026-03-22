@@ -343,60 +343,155 @@ const HeroSection = () => (
 const IntroSection = () => (
   <section id="intro" className="py-16 lg:py-24 bg-slate-50" data-testid="intro-section">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 bg-cyan-100 rounded-lg">
-              <BookOpen className="w-6 h-6 text-cyan-600" />
-            </div>
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate-900 section-title">
-              Introduzione
-            </h2>
+      {/* Header */}
+      <div className="text-center mb-12">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="p-2 bg-cyan-100 rounded-lg">
+            <BookOpen className="w-6 h-6 text-cyan-600" />
           </div>
-          <div className="space-y-4 text-slate-600 leading-relaxed mt-8">
-            <p>
-              Il Master RADIOAMICA intende formare esperti capaci di acquisire e integrare conoscenze atte ad eseguire 
-              analisi quantitative delle immagini mediche e costruire modelli predittivi che includano indicatori di 
-              radiomica, clinico-laboratoristici ed istologici.
-            </p>
-            <p>
-              In particolare, il Master si prefigge di fornire una formazione teorico-pratica di analisi avanzate delle 
-              immagini mediante l'Intelligenza Artificiale (IA) a medici, ricercatori e scienziati di varie discipline 
-              per renderli autonomi in attività medico-applicative e nello sviluppo di progetti di ricerca multidisciplinari.
-            </p>
-            <p>
-              Considerata la crescente integrazione dell'imaging nei vari ambiti della medicina, il Master, mediante 
-              l'approfondimento di tecniche dell'IA a supporto della segmentazione e dell'estrazione di variabili complesse, 
-              intende fornire le competenze necessarie per applicare la radiomica e la radiogenomica basate sull'IA in 
-              diversi ambiti oncologici quali quello polmonare, mammario, e cerebrale.
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-slate-900">
+            Introduzione
+          </h2>
+        </div>
+        <p className="text-slate-600 max-w-3xl mx-auto">
+          Master di II Livello - 1ª Edizione - Modalità Ibrida (Lezioni Online, Tesi in Presenza)
+        </p>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="space-y-6">
+          {/* Obiettivo */}
+          <div>
+            <h3 className="font-heading font-bold text-xl text-slate-900 mb-3 flex items-center gap-2">
+              <div className="w-1 h-6 bg-cyan-500 rounded-full"></div>
+              Obiettivo
+            </h3>
+            <div className="space-y-4 text-slate-600 leading-relaxed">
+              <p>
+                Il Master intende formare esperti capaci di acquisire e integrare conoscenze atte ad eseguire 
+                analisi quantitative delle immagini mediche e costruire modelli predittivi che includano indicatori di 
+                radiomica, clinico-laboratoristici ed istologici.
+              </p>
+              <p>
+                In particolare, il Master si prefigge di fornire una formazione teorico-pratica di analisi avanzate delle 
+                immagini mediante l'Intelligenza Artificiale (IA) a medici, ricercatori e scienziati di varie discipline 
+                per renderli autonomi in attività medico-applicative e nello sviluppo di progetti di ricerca multidisciplinari.
+              </p>
+              <p>
+                Considerata la crescente integrazione dell'imaging nei vari ambiti della medicina, il Master, mediante 
+                l'approfondimento di tecniche dell'IA a supporto della segmentazione e dell'estrazione di variabili complesse, 
+                intende fornire le competenze necessarie per applicare analisi di radiomica e radiogenomica basate sull'IA in 
+                diversi ambiti oncologici quali quello polmonare, mammario, cerebrale, ecc.
+              </p>
+              <p>
+                Inoltre, essendo il Master programmato nell'ambito del progetto POS RADIOAMICA finanziato dal Ministero della Salute, 
+                gli studenti saranno coinvolti in alcune attività di ricerca e sviluppo nell'ambito del loro training-on-the-job 
+                e della realizzazione dell'elaborato finale.
+              </p>
+            </div>
+          </div>
+
+          {/* Requisiti di accesso */}
+          <div className="bg-white p-6 rounded-xl border border-slate-200">
+            <h3 className="font-heading font-bold text-lg text-slate-900 mb-3">Requisiti di Accesso</h3>
+            <p className="text-slate-600 text-sm">
+              Possono presentare domanda di ammissione coloro che siano in possesso di una delle seguenti lauree magistrali: 
+              <span className="font-medium text-slate-800"> Medicina, Informatica, Ingegneria Informatica/Elettronica/Telecomunicazioni, 
+              Matematica, Fisica, Statistica, Biologia, Farmacia, CTF.</span>
             </p>
           </div>
         </div>
-        <div className="relative">
+
+        <div className="space-y-6">
+          {/* Info Cards */}
           <div className="bg-white p-6 rounded-2xl shadow-xl border border-slate-200">
-            <img 
-              src="https://images.unsplash.com/photo-1643216503879-b2c604ce6cf2?auto=format&fit=crop&w=800&q=80" 
-              alt="Medical AI Technology" 
-              className="w-full h-64 object-cover rounded-xl"
-            />
-            <div className="mt-6 grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
-                <Brain className="w-8 h-8 text-cyan-500" />
-                <div>
-                  <p className="font-semibold text-slate-900">AI & ML</p>
-                  <p className="text-sm text-slate-500">Deep Learning</p>
-                </div>
+            <h3 className="font-heading font-bold text-lg text-slate-900 mb-4">Informazioni Generali</h3>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between py-2 border-b border-slate-100">
+                <span className="text-slate-600">Durata</span>
+                <span className="font-semibold text-slate-900">12 mesi</span>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
-                <Dna className="w-8 h-8 text-indigo-500" />
-                <div>
-                  <p className="font-semibold text-slate-900">Radiogenomica</p>
-                  <p className="text-sm text-slate-500">NGS & DNA</p>
-                </div>
+              <div className="flex items-center justify-between py-2 border-b border-slate-100">
+                <span className="text-slate-600">Avvio attività</span>
+                <span className="font-semibold text-slate-900">Novembre 2025</span>
+              </div>
+              <div className="flex items-center justify-between py-2 border-b border-slate-100">
+                <span className="text-slate-600">Conclusione</span>
+                <span className="font-semibold text-slate-900">Ottobre 2026</span>
+              </div>
+              <div className="flex items-center justify-between py-2 border-b border-slate-100">
+                <span className="text-slate-600">Numero allievi</span>
+                <span className="font-semibold text-slate-900">Min 12 - Max 40</span>
+              </div>
+              <div className="flex items-center justify-between py-2 border-b border-slate-100">
+                <span className="text-slate-600">Uditori</span>
+                <span className="font-semibold text-slate-900">Max 6</span>
+              </div>
+              <div className="flex items-center justify-between py-2">
+                <span className="text-slate-600">Quota di iscrizione</span>
+                <span className="font-bold text-cyan-600 text-lg">€ 3.000,00</span>
+              </div>
+            </div>
+          </div>
+
+          {/* CFU Table */}
+          <div className="bg-slate-900 p-6 rounded-2xl text-white">
+            <h3 className="font-heading font-bold text-lg mb-4">Crediti Formativi (CFU)</h3>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-slate-300">Lezioni frontali (210 ore)</span>
+                <Badge className="bg-cyan-500">30 CFU</Badge>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-slate-300">FAD asincrona (100 ore)</span>
+                <Badge className="bg-cyan-500">10 CFU</Badge>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-slate-300">Training on the job (300 ore)</span>
+                <Badge className="bg-cyan-500">12 CFU</Badge>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-slate-300">Elaborato finale (200 ore)</span>
+                <Badge className="bg-cyan-500">8 CFU</Badge>
+              </div>
+              <Separator className="bg-slate-700 my-2" />
+              <div className="flex items-center justify-between font-bold">
+                <span>Totale (1500 ore)</span>
+                <Badge className="bg-indigo-500 text-base px-3 py-1">60 CFU</Badge>
+              </div>
+            </div>
+          </div>
+
+          {/* Features */}
+          <div className="grid grid-cols-2 gap-4">
+            <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200">
+              <Brain className="w-8 h-8 text-cyan-500" />
+              <div>
+                <p className="font-semibold text-slate-900">AI & ML</p>
+                <p className="text-sm text-slate-500">Deep Learning</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200">
+              <Dna className="w-8 h-8 text-indigo-500" />
+              <div>
+                <p className="font-semibold text-slate-900">Radiogenomica</p>
+                <p className="text-sm text-slate-500">NGS & DNA</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Attività didattiche note */}
+      <div className="mt-12 bg-white p-6 rounded-xl border border-slate-200">
+        <h3 className="font-heading font-bold text-lg text-slate-900 mb-3">Modalità Didattica</h3>
+        <p className="text-slate-600">
+          Le attività d'aula (Moduli 1-2) si svolgeranno <strong>venerdì pomeriggio e sabato mattina</strong> per un totale 
+          di massimo 6 ore al giorno. Tutte le lezioni verranno erogate in modalità online mediante la piattaforma 
+          <strong> MS Teams</strong>. Per ciascun modulo saranno previste anche ore di attività e-learning asincrono. 
+          Le attività del Modulo 3 (Training on the job) saranno svolte presso un ente convenzionato. 
+          L'elaborato di tesi sarà supervisionato da un tutor docente del Master.
+        </p>
       </div>
     </div>
   </section>
