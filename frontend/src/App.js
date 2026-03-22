@@ -31,8 +31,8 @@ import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 // Assets
-const LOGO_URL = "%PUBLIC_URL%/logo.png";
-const BROCHURE_URL = "%PUBLIC_URL%/brochure.jpg";
+const LOGO_URL = process.env.PUBLIC_URL + "/logo.png";
+const BROCHURE_URL = process.env.PUBLIC_URL + "/brochure.jpg";
 const PROJECT_LINK = "https://projects.dimes.unical.it/radioamica/";
 
 // Data
