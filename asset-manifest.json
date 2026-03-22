@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/radioamica/static/css/main.e031c5b8.css",
+    "main.js": "/radioamica/static/js/main.9a5fbd90.js",
+    "index.html": "/radioamica/index.html",
+    "main.e031c5b8.css.map": "/radioamica/static/css/main.e031c5b8.css.map",
+    "main.9a5fbd90.js.map": "/radioamica/static/js/main.9a5fbd90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e031c5b8.css",
+    "static/js/main.9a5fbd90.js"
+  ]
+}
