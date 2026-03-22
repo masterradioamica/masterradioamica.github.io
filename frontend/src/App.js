@@ -31,9 +31,9 @@ import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 // Assets
-const LOGO_URL = "https://customer-assets.emergentagent.com/job_3562437c-6e92-4176-9322-4b8de0ccb935/artifacts/kdmx089f_IMG_6048.png";
-const BROCHURE_URL = "./assets/brochure.jpg";
-const PROJECT_LINK = "./assets/logo.png";
+const LOGO_URL = "%PUBLIC_URL%/logo.png";
+const BROCHURE_URL = "%PUBLIC_URL%/brochure.jpg";
+const PROJECT_LINK = "https://projects.dimes.unical.it/radioamica/";
 
 // Data
 const navItems = [
