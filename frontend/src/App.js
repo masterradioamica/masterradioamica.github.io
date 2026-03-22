@@ -32,8 +32,8 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 // Assets
 const LOGO_URL = "https://customer-assets.emergentagent.com/job_3562437c-6e92-4176-9322-4b8de0ccb935/artifacts/kdmx089f_IMG_6048.png";
-const BROCHURE_URL = "https://customer-assets.emergentagent.com/job_3562437c-6e92-4176-9322-4b8de0ccb935/artifacts/d7r9s7tl_IMG_6049.jpeg";
-const PROJECT_LINK = "https://projects.dimes.unical.it/radioamica/";
+const BROCHURE_URL = "./assets/brochure.jpg";
+const PROJECT_LINK = "./assets/logo.png";
 
 // Data
 const navItems = [
